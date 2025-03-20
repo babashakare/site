@@ -28,7 +28,7 @@
     <link href="vendor/swiper/css/swiper.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="https://style.tiiny.site/style.css" rel="stylesheet" id="style">
+    <link href="css/style.css" rel="stylesheet" id="style">
 </head>
 
 <body class="body-scroll d-flex flex-column h-100 menu-overlay" data-page="homepage">
@@ -80,6 +80,15 @@
             </div>
 
             <ul class="nav nav-pills flex-column ">
+<!--			    <li class="nav-item">
+                    <a class="nav-link" href="profile.html">
+                        <div>
+                            <span class="material-icons icon">person</span>
+                            پروفایل سرور
+                        </div>
+                        <span class="arrow material-icons">chevron_right</span>
+                    </a>-->
+                </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="index.html">
                         <div>
@@ -90,25 +99,33 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="openModal">
-                        <div>
-                            <span class="material-icons icon">card_giftcard</span>
-                            کد جایزه
-                        </div>
-                        <span class="arrow material-icons">chevron_right</span>
-                    </a>
-                </li>
+
+            <a class="nav-link" id="openModal">
+
+                <div>
+
+                    <span class="material-icons icon">card_giftcard</span>
+
+                    کد جایزه
+
+                </div>
+
+                <span class="arrow material-icons">chevron_right</span>
+
+            </a>
+
+        </li>
 				
                 <li class="nav-item">
-                    <a class="nav-link" href="refer_friends.html">
+                    <a class="nav-link" href="bog.html">
                         <div>
-                            <span class="material-icons icon">perm_contact_calendar</span>
-                            Refer Friends
+                            <span class="material-icons icon">warning</span>
+                            اعلام باگ در سرور
                         </div>
                         <span class="arrow material-icons">chevron_right</span>
                     </a>
                 </li>
-                <li class="nav-item">
+<!--                <li class="nav-item">
                     <a class="nav-link" href="gift_cards.html">
                         <div>
                             <span class="material-icons icon">card_giftcard</span>
@@ -125,30 +142,12 @@
                         </div>
                         <span class="arrow material-icons">chevron_right</span>
                     </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="setting.html">
-                        <div>
-                            <span class="material-icons icon">settings</span>
-                            Settings
-                        </div>
-                        <span class="arrow material-icons">chevron_right</span>
-                    </a>
-                </li>
+                </li> -->
                 <li class="nav-item">
                     <a class="nav-link" href="pages.html">
                         <div>
                             <span class="material-icons icon">layers</span>
-                            Pages
-                        </div>
-                        <span class="arrow material-icons">chevron_right</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="controls.html">
-                        <div>
-                            <span class="material-icons icon">widgets</span>
-                            Controls
+                            اخبار سرور
                         </div>
                         <span class="arrow material-icons">chevron_right</span>
                     </a>
@@ -190,7 +189,7 @@
                     </a>
                 </div>
                 <div class="ml-auto col-auto pl-0">
-                    <a href="profile.html" class="avatar avatar-30 shadow-sm rounded-circle ml-2">
+                    <a href="#" class="avatar avatar-30 shadow-sm rounded-circle ml-2">
                         <figure class="m-0 background">
                             <img src="img/user1.png" alt="">
                         </figure>
@@ -255,7 +254,7 @@
                                 <div class="card-body p-2" style="margin: 10px 20px;">
 								<p><font color="#048500" size = "2"><b>✔ فعال</b></font></p>
                                     <div class="avatar avatar-60 rounded mb-1">
-                                       <a href="https://www.aparat.com/baba_mojii/live" target="_blank">
+                                       <a href="#" onclick="suggestBrowser(); return false;">
                                          <div class="background">
                                        <img src="img/Sbabamoji.webp" alt="">
                                      </div>
@@ -389,50 +388,51 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col">
-                                        <h5 class="mb-1">$ 106.00</h5>
-                                        <p class="text-secondary">33 days to pay gas bill</p>
+                                        <h5 class="mb-1"><b>برای ارتقای سرور به ما رای بدید</b></h5>
+										<iframe src='https://app.epoll.ir/e/نظر-سنجی-از-وب-سایت/MDI5NjYx?Referral=iframe' width='100%' height='240px'></iframe>ُ
                                     </div>
-                                    <div class="col-auto pl-0">
-                                        <button class="btn btn-40 bg-default-light text-default rounded-circle">
-                                            <i class="material-icons">local_atm</i>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="progress h-5 mt-3">
-                                    <div class="progress-bar bg-default" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h6 class="mb-1">Select Menu Type</h6>
-                        <p class="text-secondary small">Open menu after selecting style</p>
-                        <div class="row">
-                            <div class="col-6 col-md-auto">
-                                <div class="custom-control custom-switch">
-                                    <input type="radio" name="menustyle" class="custom-control-input" id="menu-overlay" checked="">
-                                    <label class="custom-control-label" for="menu-overlay">Overlay</label>
-                                </div>
+			<div class="col-12 col-md-6">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <h6>برترین گیم های سال 2025 به ترتیب تعداد پلیر</h6>
                             </div>
-                            <div class="col-6 col-md-auto">
-                                <div class="custom-control custom-switch">
-                                    <input type="radio" name="menustyle" class="custom-control-input" id="menu-pushcontent">
-                                    <label class="custom-control-label" for="menu-pushcontent">Reveal</label>
+                            <div class="card-body">
+							    <h6><b>ROBLOX</b></h6>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"><b>200.000.000 Player</b></div>
+                                </div>
+								<h6><b>Minecraft</b></h6>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><b>140.000.000 Player</b></div>
+                                </div>
+								<h6><b>Fortnite</b></h6>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><b>80.000.000 Player</b></div>
+                                </div>
+								<h6><b>Counter-Strike 2</b></h6>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 45%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><b>30.000.000 Player</b></div>
+                                </div>
+								<h6><b>Call of Duty: Modern Warfare II/III</b></h6>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: 35%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><b>25.000.000 Player</b></div>
+                                </div>
+								<h6><b>Dota 2</b></h6>
+                                <div class="progress ">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" style="width: 25%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><b>10.000.000 Player</b></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
             <div class="container ">
                 <div class="row">
                     <div class="col text-center">
-                        <h5 class="subtitle">Most Exciting Feature</h5>
-                        <p class="text-secondary">Take a look at our services</p>
                     </div>
                 </div>
                 <div class="row text-center mt-3">
@@ -440,10 +440,10 @@
                         <div class="card border-0 mb-4">
                             <div class="card-body">
                                 <div class="avatar avatar-60 bg-default-light rounded-circle text-default">
-                                    <i class="material-icons vm md-36 text-template">card_giftcard</i>
+                                    <i class="material-icons vm md-36 text-template">warning</i>
                                 </div>
-                                <h3 class="mt-3 mb-0 font-weight-normal">2546</h3>
-                                <p class="text-secondary small">Gift it out</p>
+                                <h3 class="mt-3 mb-0 font-weight-normal">25</h3>
+                                <p class="text-secondary small"><b>تعداد باگ های پیدا شده توسط کاربران</b></p>
                             </div>
                         </div>
                     </div>
@@ -451,21 +451,21 @@
                         <div class="card border-0 mb-4">
                             <div class="card-body">
                                 <div class="avatar avatar-60 bg-default-light rounded-circle text-default">
-                                    <i class="material-icons vm md-36 text-template">subscriptions</i>
+                                    <i class="material-icons vm md-36 text-template">verified</i>
                                 </div>
-                                <h3 class="mt-3 mb-0 font-weight-normal">635</h3>
-                                <p class="text-secondary small">Monthly Billed</p>
+                                <h3 class="mt-3 mb-0 font-weight-normal">24</h3>
+                                <p class="text-secondary small"><b>تعداد باگ های فیکس شده</b></p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 col-md-3">
+<!--                    <div class="col-6 col-md-3">
                         <div class="card border-0 mb-4">
                             <div class="card-body">
                                 <div class="avatar avatar-60 bg-default-light rounded-circle text-default">
                                     <i class="material-icons vm md-36 text-template">local_florist</i>
                                 </div>
                                 <h3 class="mt-3 mb-0 font-weight-normal">1542</h3>
-                                <p class="text-secondary small">Eco environment</p>
+                                <p class="text-secondary small"><b>تاریخ امروز</b></p>
                             </div>
                         </div>
                     </div>
@@ -479,41 +479,11 @@
                                 <p class="text-secondary small">Four Offices</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container mb-4">
-                <div class="card">
-                    <div class="card-body text-left text-md-center">
-                        <p class="text-secondary">About us</p>
-                        <h4 class="mb-3">Finance is not only income and expense. Its about more than that.</h4>
-                        <h4 class="text-secondary font-weight-normal">We are at our best</h4>
-                        <div class="row my-3 justify-content-center">
-                            <div class="col-10 col-md-4 mx-auto"><img src="img/about.png" alt="" class="mw-100"></div>
-                        </div>
-                        <p class="text-secondary mt-3">User experienced user interfaces with HTML and CSS also providing flexibility of style color customization. We have created specific website template demos and component library which be used across any demo.</p>
-                        <a href="about.html" class="btn btn-sm btn-default rounded">Read more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="card">
-                    <div class="card-header">
-                        <h6 class="mb-0">Pages</h6>
-                    </div>
-                    <div class="card-body px-0 pt-0">
-                        <div class="list-group list-group-flush border-top border-color">
-                            <a href="about.html" class="list-group-item list-group-item-action border-color">About</a>
-                            <a href="analytics.html" class="list-group-item list-group-item-action border-color">Analytics</a>
-                            <a href="transactions.html" class="list-group-item list-group-item-action border-color">Transactions</a>
-                            <a href="gift_cards.html" class="list-group-item list-group-item-action border-color">Gift Cards</a>
-                            <a href="error.html" class="list-group-item list-group-item-action border-color">Error</a>
-                            <a href="pages.html" class="list-group-item list-group-item-action border-color text-primary text-center">More 20+ pages</a>
-                        </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>
+		
     </main>
 
     <!-- footer-->
@@ -526,23 +496,17 @@
                 </a>
             </div>
             <div class="col-auto">
-                <a href="wallet.html" class="">
-                    <i class="material-icons">account_balance_wallet</i>
-                    <p>Wallet</p>
+                <a href="#" class="" id="protectedText">
+                    <i class="material-icons">streamer</i>
+                    <p>وضعیت استریمر</p>
                 </a>
             </div>
-            <div class="col-auto">
-                <a href="shop.html" class="">
-                    <i class="material-icons">shopping_bag</i>
-                    <p>Shop</p>
-                </a>
-            </div>
-            <div class="col-auto">
+<!--            <div class="col-auto">
                 <a href="profile.html" class="">
                     <i class="material-icons">account_circle</i>
-                    <p>Profile</p>
+                    <p>پروفایل شکرسیتی</p>
                 </a>
-            </div>
+            </div>-->
         </div>
     </div>
 
@@ -653,6 +617,12 @@
 
     <!-- popup -->
     <script src="js/popup.js"></script>
+	
+    <!-- link -->
+    <script src="js/link.js"></script>
+    <script src="js/streamerpas.js"></script>
+	
+
 </body>
 
 </html>
