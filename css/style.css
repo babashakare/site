@@ -11615,3 +11615,561 @@ p:last-child {
   margin-right: 0;
   margin-left: 10px;
 }
+body {
+
+            font-family: Arial, sans-serif;
+
+            text-align: center;
+
+            margin-top: 1px;
+
+}
+
+#counter {
+
+            font-size: 2em;
+
+}
+.custom-button {
+
+    display: inline-block;
+
+    padding: 15px 30px;
+
+    font-size: 16px;
+
+    color: #fff;
+
+    background-color: #3629B7; /* رنگ پس‌زمینه */
+
+    border: none;
+
+    border-radius: 25px; /* گرد کردن گوشه‌ها */
+
+    text-align: center;
+
+    text-decoration: none; /* حذف زیرخط */
+
+    transition: background-color 0.3s, transform 0.3s; /* انیمیشن */
+
+}
+
+
+.custom-button:hover {
+
+    background-color: #251a96; /* رنگ پس‌زمینه در حالت هاور */
+
+    transform: scale(1.05); /* بزرگ شدن دکمه در حالت هاور */
+
+}
+
+
+.custom-button:active {
+
+    transform: scale(0.95); /* کوچک شدن دکمه در حالت کلیک */
+
+}
+        /* استایل برای پاپ آپ */
+
+        .modal {
+
+            display: none; /* پنهان کردن پاپ آپ به طور پیش‌فرض */
+
+            position: fixed;
+
+            z-index: 1;
+
+            left: 0;
+
+            top: 0;
+
+            width: 100%;
+
+            height: 100%;
+
+            overflow: auto;
+
+            background-color: rgba(0, 0, 0, 0.5); /* پس‌زمینه نیمه شفاف */
+
+        }
+
+
+        .modal-content {
+
+            background-color: #3629b7;
+
+            margin: 15% auto;
+
+            padding: 20px;
+
+            border: 1px solid #888;
+
+            width: 80%;
+
+            max-width: 500px; /* حداکثر عرض */
+
+            border-radius: 10px; /* گرد کردن گوشه‌ها */
+
+        }
+
+
+        .close {
+
+            color: #aaa;
+
+            float: right;
+
+            font-size: 28px;
+
+            font-weight: bold;
+
+        }
+
+
+        .close:hover,
+
+        .close:focus {
+
+            color: black;
+
+            text-decoration: none;
+
+            cursor: pointer;
+
+        }
+body {
+
+            transition: background-color 0.5s; /* انیمیشن برای تار شدن پس‌زمینه */
+
+        }
+
+
+        .toggle-header {
+
+            cursor: pointer; /* نشان دادن اینکه این متن قابل کلیک است */
+
+            color: blue; /* رنگ متن */
+
+            text-decoration: none; /* حذف خط زیر متن */
+
+        }
+
+
+        /* استایل پاپ آپ */
+
+        .modal {
+
+            display: none; /* مخفی کردن پاپ آپ */
+
+            position: fixed; /* موقعیت ثابت */
+
+            z-index: 1000; /* بالاتر از سایر عناصر */
+
+            left: 0;
+
+            top: 0;
+
+            width: 100%; /* عرض کامل */
+
+            height: 100%; /* ارتفاع کامل */
+
+            background-color: rgba(0, 0, 0, 0.5); /* پس‌زمینه نیمه شفاف */
+
+        }
+
+
+        .modal-content {
+
+            background-color: #fefefe; /* رنگ پس‌زمینه محتوا */
+
+            margin: 15% auto; /* مرکز کردن محتوا */
+
+            padding: 20px;
+
+            border: 1px solid #888; /* حاشیه */
+
+            width: 80%; /* عرض محتوا */
+
+            border-radius: 10px; /* گوشه‌های گرد */
+
+            position: relative; /* برای موقعیت دکمه شمارش معکوس */
+
+        }
+
+
+        .countdown {
+
+            position: absolute; /* موقعیت دکمه شمارش معکوس */
+
+            top: 3px;
+
+            right: 7px;
+
+            font-size: 13px;
+
+            color: red; /* رنگ شمارش معکوس */
+
+        }
+body {
+
+            font-family: Arial, sans-serif;
+
+            background-color: black; /* پس‌زمینه سیاه برای بهتر دیده شدن عدد سفید */
+
+        }
+
+        .number-display {
+
+            font-size: 80%; /* اندازه بزرگتر برای نمایش عدد */
+
+            color: black; /* رنگ متن سفید */
+
+            margin: 8px 0; /* فاصله 3 پیکسل از بالا */
+
+        }
+
+        .number1 {
+
+            /* استایل خاص برای عدد اول */
+
+        }
+
+        .number2 {
+
+            /* استایل خاص برای عدد دوم */
+
+        }
+/* From Uiverse.io by mobinkakei */ 
+.loader {
+  --path: #FFA908;
+  --dot: #5628ee;
+  --duration: 3s;
+  width: 44px;
+  height: 44px;
+  position: relative;
+}
+
+.loader:before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: absolute;
+  display: block;
+  background: var(--dot);
+  top: 37px;
+  left: 19px;
+  transform: translate(-18px, -18px);
+  animation: dotRect var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86)
+    infinite;
+}
+
+.loader svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.loader svg rect,
+.loader svg polygon,
+.loader svg circle {
+  fill: none;
+  stroke: var(--path);
+  stroke-width: 10px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.loader svg polygon {
+  stroke-dasharray: 145 76 145 76;
+  stroke-dashoffset: 0;
+  animation: pathTriangle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86)
+    infinite;
+}
+
+.loader svg rect {
+  stroke-dasharray: 192 64 192 64;
+  stroke-dashoffset: 0;
+  animation: pathRect 3s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+}
+
+.loader svg circle {
+  stroke-dasharray: 150 50 150 50;
+  stroke-dashoffset: 75;
+  animation: pathCircle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86)
+    infinite;
+}
+
+.loader.triangle {
+  width: 48px;
+}
+
+.loader.triangle:before {
+  left: 21px;
+  transform: translate(-10px, -18px);
+  animation: dotTriangle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86)
+    infinite;
+}
+
+@keyframes pathTriangle {
+  33% {
+    stroke-dashoffset: 74;
+  }
+
+  66% {
+    stroke-dashoffset: 147;
+  }
+
+  100% {
+    stroke-dashoffset: 221;
+  }
+}
+
+@keyframes dotTriangle {
+  33% {
+    transform: translate(0, 0);
+  }
+
+  66% {
+    transform: translate(10px, -18px);
+  }
+
+  100% {
+    transform: translate(-10px, -18px);
+  }
+}
+
+@keyframes pathRect {
+  25% {
+    stroke-dashoffset: 64;
+  }
+
+  50% {
+    stroke-dashoffset: 128;
+  }
+
+  75% {
+    stroke-dashoffset: 192;
+  }
+
+  100% {
+    stroke-dashoffset: 256;
+  }
+}
+
+@keyframes dotRect {
+  25% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(18px, -18px);
+  }
+
+  75% {
+    transform: translate(0, -36px);
+  }
+
+  100% {
+    transform: translate(-18px, -18px);
+  }
+}
+
+@keyframes pathCircle {
+  25% {
+    stroke-dashoffset: 125;
+  }
+
+  50% {
+    stroke-dashoffset: 175;
+  }
+
+  75% {
+    stroke-dashoffset: 225;
+  }
+
+  100% {
+    stroke-dashoffset: 275;
+  }
+}
+
+.loader {
+  display: inline-block;
+  margin: 0 16px;
+}
+/* From Uiverse.io by MikeAndrewDesigner */ 
+.e-card {
+  margin: 10px auto;
+  background: transparent;
+  box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
+  position: relative;
+  width: 240px;
+  height: 330px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.wave {
+  position: absolute;
+  width: 540px;
+  height: 700px;
+  opacity: 0.6;
+  left: 0;
+  top: 0;
+  margin-left: -50%;
+  margin-top: -70%;
+  background: linear-gradient(744deg,#af40ff,#5b42f3 60%,#00ddeb);
+}
+
+.icon {
+  width: 3em;
+  margin-top: -1em;
+  padding-bottom: 1em;
+}
+
+.infotop {
+  text-align: center;
+  font-size: 20px;
+  position: absolute;
+  top: 5.6em;
+  left: 0;
+  right: 0;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 100;
+  position: relative;
+  top: 1em;
+  text-transform: lowercase;
+}
+
+.wave:nth-child(2),
+.wave:nth-child(3) {
+  top: 210px;
+}
+
+.playing .wave {
+  border-radius: 40%;
+  animation: wave 3000ms infinite linear;
+}
+
+.wave {
+  border-radius: 40%;
+  animation: wave 55s infinite linear;
+}
+
+.playing .wave:nth-child(2) {
+  animation-duration: 4000ms;
+}
+
+.wave:nth-child(2) {
+  animation-duration: 50s;
+}
+
+.playing .wave:nth-child(3) {
+  animation-duration: 5000ms;
+}
+
+.wave:nth-child(3) {
+  animation-duration: 45s;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.numpad {
+
+            color: gold; /* تغییر رنگ متن به طلایی */
+
+            font-size: 25px; /* تغییر اندازه متن به 25 پیکسل */
+
+            margin: 20px; /* فاصله از بالا و پایین */
+
+        }
+.streamnum {
+
+            color: gold; /* تغییر رنگ متن به طلایی */
+
+            font-size: 25px; /* تغییر اندازه متن به 25 پیکسل */
+
+            margin: 20px; /* فاصله از بالا و پایین */
+
+        }
+body {
+
+    font-family: Arial, sans-serif;
+
+    text-align: center;
+
+    margin-top: 50px;
+
+}
+
+
+#result {
+
+    margin-top: 20px;
+
+    font-size: 20px;
+
+}
+        #image {
+
+            display: none; /* Initially hide the image */
+
+            width: 50px; /* Set width to 50 pixels */
+
+            height: 50px; /* Set height to 50 pixels */
+
+        }
+        body {
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center; /* Center align items */
+
+            justify-content: center; /* Center vertically */
+
+            height: 100vh; /* Full height */
+
+            margin: 0; /* Remove default margin */
+
+        }
+
+
+        #impam {
+
+            display: none; /* Initially hide the image */
+
+            width: 100px; /* Set width to 50 pixels */
+
+            height: 100px; /* Set height to 50 pixels */
+
+            margin-top: 30px; /* Set top margin to 20 pixels */
+
+            margin-bottom: 15px; /* Set bottom margin to 15 pixels */
+
+            margin-left: 70px; /* Set left margin to 54 pixels */
+
+            margin-right: 20px; /* Set right margin to 33 pixels */
+
+        }
+		
+
+
+        #result {
+
+            text-align: center; /* Center align text */
+
+        }
