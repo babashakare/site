@@ -21,7 +21,7 @@ function fetchData() {
             // پیام‌های مربوط به هر خط
 
             const messages = [
-                        "Baba Mojiَ",
+                        "Baba Moji",
                         "Pazangaming",
                         "MRmohsenASL",
                         "BIG Mani",
