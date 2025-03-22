@@ -11640,40 +11640,40 @@ body {
 
     color: #fff;
 
-    background-color: #3629B7; /* رنگ پس‌زمینه */
+    background-color: #3629B7; /* Ø±Ù†Ú¯ Ù¾Ø³â€ŒØ²Ù…ÛŒÙ†Ù‡ */
 
     border: none;
 
-    border-radius: 25px; /* گرد کردن گوشه‌ها */
+    border-radius: 25px; /* Ú¯Ø±Ø¯ Ú©Ø±Ø¯Ù† Ú¯ÙˆØ´Ù‡â€ŒÙ‡Ø§ */
 
     text-align: center;
 
-    text-decoration: none; /* حذف زیرخط */
+    text-decoration: none; /* Ø­Ø°Ù Ø²ÛŒØ±Ø®Ø· */
 
-    transition: background-color 0.3s, transform 0.3s; /* انیمیشن */
+    transition: background-color 0.3s, transform 0.3s; /* Ø§Ù†ÛŒÙ…ÛŒØ´Ù† */
 
 }
 
 
 .custom-button:hover {
 
-    background-color: #251a96; /* رنگ پس‌زمینه در حالت هاور */
+    background-color: #251a96; /* Ø±Ù†Ú¯ Ù¾Ø³â€ŒØ²Ù…ÛŒÙ†Ù‡ Ø¯Ø± Ø­Ø§Ù„Øª Ù‡Ø§ÙˆØ± */
 
-    transform: scale(1.05); /* بزرگ شدن دکمه در حالت هاور */
+    transform: scale(1.05); /* Ø¨Ø²Ø±Ú¯ Ø´Ø¯Ù† Ø¯Ú©Ù…Ù‡ Ø¯Ø± Ø­Ø§Ù„Øª Ù‡Ø§ÙˆØ± */
 
 }
 
 
 .custom-button:active {
 
-    transform: scale(0.95); /* کوچک شدن دکمه در حالت کلیک */
+    transform: scale(0.95); /* Ú©ÙˆÚ†Ú© Ø´Ø¯Ù† Ø¯Ú©Ù…Ù‡ Ø¯Ø± Ø­Ø§Ù„Øª Ú©Ù„ÛŒÚ© */
 
 }
-        /* استایل برای پاپ آپ */
+        /* Ø§Ø³ØªØ§ÛŒÙ„ Ø¨Ø±Ø§ÛŒ Ù¾Ø§Ù¾ Ø¢Ù¾ */
 
         .modal {
 
-            display: none; /* پنهان کردن پاپ آپ به طور پیش‌فرض */
+            display: none; /* Ù¾Ù†Ù‡Ø§Ù† Ú©Ø±Ø¯Ù† Ù¾Ø§Ù¾ Ø¢Ù¾ Ø¨Ù‡ Ø·ÙˆØ± Ù¾ÛŒØ´â€ŒÙØ±Ø¶ */
 
             position: fixed;
 
@@ -11689,7 +11689,7 @@ body {
 
             overflow: auto;
 
-            background-color: rgba(0, 0, 0, 0.5); /* پس‌زمینه نیمه شفاف */
+            background-color: rgba(0, 0, 0, 0.5); /* Ù¾Ø³â€ŒØ²Ù…ÛŒÙ†Ù‡ Ù†ÛŒÙ…Ù‡ Ø´ÙØ§Ù */
 
         }
 
@@ -11706,9 +11706,9 @@ body {
 
             width: 80%;
 
-            max-width: 500px; /* حداکثر عرض */
+            max-width: 500px; /* Ø­Ø¯Ø§Ú©Ø«Ø± Ø¹Ø±Ø¶ */
 
-            border-radius: 10px; /* گرد کردن گوشه‌ها */
+            border-radius: 10px; /* Ú¯Ø±Ø¯ Ú©Ø±Ø¯Ù† Ú¯ÙˆØ´Ù‡â€ŒÙ‡Ø§ */
 
         }
 
@@ -11739,67 +11739,67 @@ body {
         }
 body {
 
-            transition: background-color 0.5s; /* انیمیشن برای تار شدن پس‌زمینه */
+            transition: background-color 0.5s; /* Ø§Ù†ÛŒÙ…ÛŒØ´Ù† Ø¨Ø±Ø§ÛŒ ØªØ§Ø± Ø´Ø¯Ù† Ù¾Ø³â€ŒØ²Ù…ÛŒÙ†Ù‡ */
 
         }
 
 
         .toggle-header {
 
-            cursor: pointer; /* نشان دادن اینکه این متن قابل کلیک است */
+            cursor: pointer; /* Ù†Ø´Ø§Ù† Ø¯Ø§Ø¯Ù† Ø§ÛŒÙ†Ú©Ù‡ Ø§ÛŒÙ† Ù…ØªÙ† Ù‚Ø§Ø¨Ù„ Ú©Ù„ÛŒÚ© Ø§Ø³Øª */
 
-            color: blue; /* رنگ متن */
+            color: blue; /* Ø±Ù†Ú¯ Ù…ØªÙ† */
 
-            text-decoration: none; /* حذف خط زیر متن */
+            text-decoration: none; /* Ø­Ø°Ù Ø®Ø· Ø²ÛŒØ± Ù…ØªÙ† */
 
         }
 
 
-        /* استایل پاپ آپ */
+        /* Ø§Ø³ØªØ§ÛŒÙ„ Ù¾Ø§Ù¾ Ø¢Ù¾ */
 
         .modal {
 
-            display: none; /* مخفی کردن پاپ آپ */
+            display: none; /* Ù…Ø®ÙÛŒ Ú©Ø±Ø¯Ù† Ù¾Ø§Ù¾ Ø¢Ù¾ */
 
-            position: fixed; /* موقعیت ثابت */
+            position: fixed; /* Ù…ÙˆÙ‚Ø¹ÛŒØª Ø«Ø§Ø¨Øª */
 
-            z-index: 1000; /* بالاتر از سایر عناصر */
+            z-index: 1000; /* Ø¨Ø§Ù„Ø§ØªØ± Ø§Ø² Ø³Ø§ÛŒØ± Ø¹Ù†Ø§ØµØ± */
 
             left: 0;
 
             top: 0;
 
-            width: 100%; /* عرض کامل */
+            width: 100%; /* Ø¹Ø±Ø¶ Ú©Ø§Ù…Ù„ */
 
-            height: 100%; /* ارتفاع کامل */
+            height: 100%; /* Ø§Ø±ØªÙØ§Ø¹ Ú©Ø§Ù…Ù„ */
 
-            background-color: rgba(0, 0, 0, 0.5); /* پس‌زمینه نیمه شفاف */
+            background-color: rgba(0, 0, 0, 0.5); /* Ù¾Ø³â€ŒØ²Ù…ÛŒÙ†Ù‡ Ù†ÛŒÙ…Ù‡ Ø´ÙØ§Ù */
 
         }
 
 
         .modal-content {
 
-            background-color: #fefefe; /* رنگ پس‌زمینه محتوا */
+            background-color: #fefefe; /* Ø±Ù†Ú¯ Ù¾Ø³â€ŒØ²Ù…ÛŒÙ†Ù‡ Ù…Ø­ØªÙˆØ§ */
 
-            margin: 15% auto; /* مرکز کردن محتوا */
+            margin: 15% auto; /* Ù…Ø±Ú©Ø² Ú©Ø±Ø¯Ù† Ù…Ø­ØªÙˆØ§ */
 
             padding: 20px;
 
-            border: 1px solid #888; /* حاشیه */
+            border: 1px solid #888; /* Ø­Ø§Ø´ÛŒÙ‡ */
 
-            width: 80%; /* عرض محتوا */
+            width: 80%; /* Ø¹Ø±Ø¶ Ù…Ø­ØªÙˆØ§ */
 
-            border-radius: 10px; /* گوشه‌های گرد */
+            border-radius: 10px; /* Ú¯ÙˆØ´Ù‡â€ŒÙ‡Ø§ÛŒ Ú¯Ø±Ø¯ */
 
-            position: relative; /* برای موقعیت دکمه شمارش معکوس */
+            position: relative; /* Ø¨Ø±Ø§ÛŒ Ù…ÙˆÙ‚Ø¹ÛŒØª Ø¯Ú©Ù…Ù‡ Ø´Ù…Ø§Ø±Ø´ Ù…Ø¹Ú©ÙˆØ³ */
 
         }
 
 
         .countdown {
 
-            position: absolute; /* موقعیت دکمه شمارش معکوس */
+            position: absolute; /* Ù…ÙˆÙ‚Ø¹ÛŒØª Ø¯Ú©Ù…Ù‡ Ø´Ù…Ø§Ø±Ø´ Ù…Ø¹Ú©ÙˆØ³ */
 
             top: 3px;
 
@@ -11807,36 +11807,36 @@ body {
 
             font-size: 13px;
 
-            color: red; /* رنگ شمارش معکوس */
+            color: red; /* Ø±Ù†Ú¯ Ø´Ù…Ø§Ø±Ø´ Ù…Ø¹Ú©ÙˆØ³ */
 
         }
 body {
 
             font-family: Arial, sans-serif;
 
-            background-color: black; /* پس‌زمینه سیاه برای بهتر دیده شدن عدد سفید */
+            background-color: black; /* Ù¾Ø³â€ŒØ²Ù…ÛŒÙ†Ù‡ Ø³ÛŒØ§Ù‡ Ø¨Ø±Ø§ÛŒ Ø¨Ù‡ØªØ± Ø¯ÛŒØ¯Ù‡ Ø´Ø¯Ù† Ø¹Ø¯Ø¯ Ø³ÙÛŒØ¯ */
 
         }
 
         .number-display {
 
-            font-size: 80%; /* اندازه بزرگتر برای نمایش عدد */
+            font-size: 50%; /* Ø§Ù†Ø¯Ø§Ø²Ù‡ Ø¨Ø²Ø±Ú¯ØªØ± Ø¨Ø±Ø§ÛŒ Ù†Ù…Ø§ÛŒØ´ Ø¹Ø¯Ø¯ */
 
-            color: black; /* رنگ متن سفید */
+            color: black; /* Ø±Ù†Ú¯ Ù…ØªÙ† Ø³ÙÛŒØ¯ */
 
-            margin: 8px 0; /* فاصله 3 پیکسل از بالا */
+            margin: 8px 0; /* ÙØ§ØµÙ„Ù‡ 3 Ù¾ÛŒÚ©Ø³Ù„ Ø§Ø² Ø¨Ø§Ù„Ø§ */
 
         }
 
         .number1 {
 
-            /* استایل خاص برای عدد اول */
+            /* Ø§Ø³ØªØ§ÛŒÙ„ Ø®Ø§Øµ Ø¨Ø±Ø§ÛŒ Ø¹Ø¯Ø¯ Ø§ÙˆÙ„ */
 
         }
 
         .number2 {
 
-            /* استایل خاص برای عدد دوم */
+            /* Ø§Ø³ØªØ§ÛŒÙ„ Ø®Ø§Øµ Ø¨Ø±Ø§ÛŒ Ø¹Ø¯Ø¯ Ø¯ÙˆÙ… */
 
         }
 /* From Uiverse.io by mobinkakei */ 
