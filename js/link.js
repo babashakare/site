@@ -1,4 +1,3 @@
-<script>
 
         function suggestBrowser() {
 
@@ -12,4 +11,3 @@
 
         }
 
-</script>

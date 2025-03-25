@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورود به سیستم</title>
+
+    <link href="css/admin.css" rel="stylesheet" id="style">
+    
+</head>
+<body>
+    <div class="container" id="loginContainer">
+        <div class="heading">سیستم ورود ادمین</div>
+        <form class="form" id="loginForm">
+            <input required class="input" type="text" name="username" id="username" placeholder="نام کاربری">
+            <input required class="input" type="password" name="password" id="password" placeholder="رمز عبور">
+            <input class="login-buttons" type="submit" value="ورود">
+            <p class="error-message" id="errorMessage">یا شما ادمین نیستید یا اطلاعات رو اشتباه وارد کردید!</p>
+        </form>
+    </div>
+
+    <div id="mainContent" class="hidden main-content">
+        <div class="image-container">
+            
+            <div class="cardd">
+                <div class="card-authord">
+                    <a class="author-avatard" href="#">
+                        <span>
+                            <img id="userImage" src="" class="author-avatar2" alt="؟" style="max-width: 100%; height: auto;">
+                        </span>
+                    </a>
+                  <svg class="half-circled" viewBox="0 0 106 57">
+                    <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+                  </svg>
+                  <div class="author-named">
+                    <div class="author-name-prefixd"><b>سلام بر ادمین</b></div> <a id="displayName"></a>
+                    <p id="loginTimeDisplay"></p>
+                    </div>
+                  </div>
+                  <!-- From Uiverse.io by akshat-patel28 --> 
+<div class="button-container3">
+    <button class="button3">
+      <svg
+        class="icon3"
+        stroke="currentColor"
+        fill="currentColor"
+        stroke-width="0"
+        viewBox="0 0 1024 1024"
+        height="1em"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M946.5 505L560.1 118.8l-25.9-25.9a31.5 31.5 0 0 0-44.4 0L77.5 505a63.9 63.9 0 0 0-18.8 46c.4 35.2 29.7 63.3 64.9 63.3h42.5V940h691.8V614.3h43.4c17.1 0 33.2-6.7 45.3-18.8a63.6 63.6 0 0 0 18.7-45.3c0-17-6.7-33.1-18.8-45.2zM568 868H456V664h112v204zm217.9-325.7V868H632V640c0-22.1-17.9-40-40-40H432c-22.1 0-40 17.9-40 40v228H238.1V542.3h-96l370-369.7 23.1 23.1L882 542.3h-96.1z"
+        ></path>
+      </svg>
+    </button>
+    <button class="button3">
+      <svg
+        class="icon3"
+        stroke="currentColor"
+        fill="none"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+        height="1em"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+        ></path>
+      </svg>
+    </button>
+    <button class="button3">
+      <svg
+        class="icon3"
+        stroke="currentColor"
+        fill="currentColor"
+        stroke-width="0"
+        viewBox="0 0 24 24"
+        height="1em"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 2.5a5.5 5.5 0 0 1 3.096 10.047 9.005 9.005 0 0 1 5.9 8.181.75.75 0 1 1-1.499.044 7.5 7.5 0 0 0-14.993 0 .75.75 0 0 1-1.5-.045 9.005 9.005 0 0 1 5.9-8.18A5.5 5.5 0 0 1 12 2.5ZM8 8a4 4 0 1 0 8 0 4 4 0 0 0-8 0Z"
+        ></path>
+      </svg>
+    </button>
+  
+    <button class="button3">
+      <svg
+        class="icon3"
+        stroke="currentColor"
+        fill="none"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        height="1em"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle cx="9" cy="21" r="1"></circle>
+        <circle cx="20" cy="21" r="1"></circle>
+        <path
+          d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+        ></path>
+      </svg>
+    </button>
+  </div>
+  
+                </div>
+                <br>
+                <br>
+        </div>
+        <h1>کاربرانی که درخواست همکاری آنها تایید نمیشود</h1>
+        <div class="count-container">
+            تعداد کاربران: <span id="h2Count">0</span>
+        </div>
+        <div class="search-container">
+            <input type="text" id="search" class="search-input" placeholder="جستجو...">
+        </div>
+        <div id="userContainer">
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/18064382-431635-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>amin_savaky</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/10568717-245520-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>morteza.maxer</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/11486027-260923-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>Game_zone_land</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/8843925-489710-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>x_sami</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/13899165-882871-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>Hiiraadam</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/1274205-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>Music_Dance</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/7867707-613022-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>ErfanHype</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/18479449-168153-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>ReBeLStram</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/15395974-788953-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>SinaExtreme</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/16461877-938512-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>AMIR.IZEN</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/19320892-772395-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>ANBsolo</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/14539054-980572-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>hazrate_Amir</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/19037428-404405-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>Tired_Fox</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/14316333-677168-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>vlash</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/15057084-575245-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>Minger</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/18138606-350302-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>mahdi_joker16</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/9692925-753977-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>EboBoy</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/14913622-323131-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>Ali_BIG_MeNt</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/10028273-472118-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>MoeinXPro</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/8586766-910007-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>Alpha_Vr</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/3168518-503453-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>eMJei</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/12176937-474673-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>taha200oo</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/14044576-157930-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>Qazalil</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/10894429-853463-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>ParsaBOLD</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/12910798-416581-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>hopekk</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/7189526-962942-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>Vico021</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/13192762-181293-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>AmirPrdiTour</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/14721894-341127-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>MedwarZ</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/18430429-533022-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>Amir.pc2024</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/16169380-537624-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>Kindness_Dragon</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/5463403-975542-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>DARKNEES_YT</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/13703015-256561-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>AMIRRIMYA</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/15991715-529244-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>c0c0</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/11328024-373874-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>HellGhostTTV</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/15845647-953098-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>MEHDI_XD2</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/7728782-902153-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>SharminZone</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/16887202-770987-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>ZOOMBE</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/20897039-854252-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>GorGame</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/14066461-338340-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>Callmekitcatt</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/20350619-272841-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>Erfanmdy</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/21374615-747086-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>MaMaD_MbA</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/8878574-619397-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>Arad_Edrico</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/16372121-940118-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>NeXeLR6</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/19318998-2674-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>Amir_GameDAT</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/10385924-556564-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>XzRABTOR</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/11983484-195538-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>mamad_indigo</h2>
+                <button class="button">لغو همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/19285508-386209-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>AsalFury</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/8376277-405339-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>ASHIL_iDin</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/14472000-95689-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>GREAT_SOUL</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/13016869-535349-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>GameSh0w</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/9263869-143637-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>DARK_KING_8118</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/5561709-479969-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>fireleo</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/3484847-930095-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>high_times360</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/10641173-984336-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>ShoobSe</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/18675804-566808-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>evilxo</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/3342339-996354-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>sajjad_ft</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/9614259-51253-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>matinizii1</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/5668427-886920-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>Yousef.Game</h2>
+                <button class="button">لغو همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/19373226-566609-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>HOSSEIN.BRZ</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/9890329-525903-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>MITRA_michelle</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/20624596-358779-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>MmdYuf</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/22845919-535194-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>theWantony</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/13888406-466329-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>Ali_BeYG</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/8517719-236422-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>Boshke1</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/3699725-345909-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>JR_GamingX</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/10261128-78262-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>maxgame12</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/19700653-713855-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>Yavar_pro</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/16347826-602757-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>Amix_iz</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://www.aparat.com/public/public/aparat/img/global/avatar-is-channel.png" alt="amin_savaky" class="avatar">
+                <h2>Lotus_City</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/20709624-47490-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>BelyPie</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/21894640-665617-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>VK_ELYAS</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/10971416-61504-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>its_gamemo</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/9904548-892270-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>Nex_game</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+        
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/20546464-18949-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>eLvin_pLays</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/17497691-976921-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>RastinBlacklegend</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/20311320-823269-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>mrleon42</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/3611526-734981-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>EhsanEvan</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/11761722-575299-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>loganplays</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/21174822-242948-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>Dono_m</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/18222757-884023-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>DEXTERplay</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/3799756-984461-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>Ferixer</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+            <div class="card">
+                <img src="https://static.cdn.asset.aparat.com/profile-photo/1081454-186184-m.jpg" alt="amin_savaky" class="avatar">
+                <h2>soheilmohammadi</h2>
+                <button class="button">رد درخواست همکاری</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/admin.js"></script>
+
+</body>
+</html>

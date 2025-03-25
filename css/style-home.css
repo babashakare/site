@@ -292,9 +292,7 @@ select {
 button,
 [type="button"],
 [type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-}
+[type="submit"]
 
 button:not(:disabled),
 [type="button"]:not(:disabled),
@@ -352,7 +350,6 @@ progress {
 
 [type="search"] {
   outline-offset: -2px;
-  -webkit-appearance: none;
 }
 
 [type="search"]::-webkit-search-decoration {
@@ -11825,18 +11822,6 @@ body {
             color: black; /* Ø±Ù†Ú¯ Ù…ØªÙ† Ø³ÙÛŒØ¯ */
 
             margin: 8px 0; /* ÙØ§ØµÙ„Ù‡ 3 Ù¾ÛŒÚ©Ø³Ù„ Ø§Ø² Ø¨Ø§Ù„Ø§ */
-
-        }
-
-        .number1 {
-
-            /* Ø§Ø³ØªØ§ÛŒÙ„ Ø®Ø§Øµ Ø¨Ø±Ø§ÛŒ Ø¹Ø¯Ø¯ Ø§ÙˆÙ„ */
-
-        }
-
-        .number2 {
-
-            /* Ø§Ø³ØªØ§ÛŒÙ„ Ø®Ø§Øµ Ø¨Ø±Ø§ÛŒ Ø¹Ø¯Ø¯ Ø¯ÙˆÙ… */
 
         }
 /* From Uiverse.io by elijahgummer */ 

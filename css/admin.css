@@ -1,0 +1,289 @@
+body {
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 100%;
+}
+h2 {
+
+font-size: 16px; /* سایز متن 12 پیکسل */
+
+font-weight: bold; /* متن بولد */
+
+text-align: center; /* وسط‌چین کردن متن */
+
+margin: 12px 0; /* فاصله 2 پیکسل از بالا و پایین و 0 از چپ و راست */
+
+}
+.centered-h2 {
+
+font-size: 26px; /* سایز متن 12 پیکسل */
+
+font-weight: bold; /* متن بولد */
+
+text-align: center; /* وسط‌چین کردن متن */
+
+margin: 15px 15px; /* فاصله 2 پیکسل از بالا و پایین و 0 از چپ و راست */
+
+}
+
+.container {
+    max-width: 350px;
+    background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(244, 247, 251) 100%);
+    border-radius: 40px;
+    padding: 25px 35px;
+    border: 5px solid rgb(255, 255, 255);
+    box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 30px 30px -20px;
+    margin: 20px auto;
+}
+
+.heading {
+    text-align: center;
+    font-weight: 900;
+    font-size: 30px;
+    color: rgb(16, 137, 211);
+}
+
+.form {
+    margin-top: 20px;
+}
+
+.form .input {
+    width: 88%;
+    background: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin-top: 15px;
+    box-shadow: #cff0ff 0px 10px 10px -5px;
+    border-inline: 0px solid transparent;
+}
+
+.form .input::placeholder {
+    color: rgb(170, 170, 170);
+}
+
+.form .input:focus {
+    outline: none;
+    border-inline: 2px solid #12B1D1;
+}
+
+.form .login-buttons {
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    background: linear-gradient(45deg, rgb(16, 137, 211) 0%, rgb(18, 177, 209) 100%);
+    color: white;
+    padding-block: 15px;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 20px 10px -15px;
+    border: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.form .login-buttons:hover {
+    transform: scale(1.03);
+    box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 23px 10px -20px;
+}
+
+.form .login-buttons:active {
+    transform: scale(0.95);
+    box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 15px 10px -10px;
+}
+
+.error-message {
+    color: red;
+    display: none;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.main-content {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#userContainer {
+    display: flex; /* استفاده از flexbox */
+    flex-wrap: wrap; /* اجازه به کارت‌ها برای رفتن به خط بعدی */
+    justify-content: center; /* مرکز کردن کارت‌ها */
+}
+
+.card {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 30px;
+    text-align: center;
+    width: 95%;
+    max-width: 150px;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.search-container {
+    text-align: center;
+    margin: 20px;
+}
+
+.search-input {
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.count-container {
+    text-align: center;
+    margin: 20px;
+    font-size: 20px;
+}
+.button {
+
+border: 2px solid red; /* رنگ کادر قرمز */
+
+font-weight: bold; /* متن بولد */
+
+font-size: 12px; /* سایز متن 12 پیکسل */
+
+border-radius: 10px; /* گوشه‌های کادر گرد 10 پیکسل */
+
+padding: 5px 10px; /* کمی فاصله داخلی برای زیبایی */
+
+background-color: rgba(255, 0, 0, 0.3); /* پس‌زمینه قرمز ملایم با شفافیت */
+
+color: rgb(255, 255, 255); /* رنگ متن */
+
+cursor: pointer; /* نشانگر ماوس به شکل دست */
+
+transition: background-color 0.3s; /* انیمیشن تغییر رنگ پس‌زمینه */
+
+}
+
+
+.button:hover {
+
+background-color: rgba(255, 0, 0, 0.5); /* تغییر رنگ پس‌زمینه در حالت هاور */
+
+}
+
+/* پروفایل ادمین */
+/* From Uiverse.io by Madflows */ 
+.cardd {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 80px;
+    width: 70%;
+    min-width: 250px;
+    padding: 1rem;
+    border-radius: 16px;
+    background: #17141d;
+    box-shadow: -1rem 0 3rem #00000067;
+    transition: .2s;
+    font-family: 'Inter', sans-serif;
+    margin: 0 auto;
+  }
+  
+  .cardd:hover {
+    transform: translateY(-0.4rem);
+  }
+  
+  .card-authord {
+    position: relative;
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    align-items: center;
+    margin: 0rem 0 0;
+  }
+  
+  .author-named {
+    color: #7a7a8c;
+  }
+  
+  .author-name-prefixd {
+    color: #e52e71;
+    font-weight: 600;
+  }
+  
+  .author-avatard span {
+    display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #f2f2f2;
+  margin: 8px 10px;
+}
+  
+  .half-circled {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 60px;
+    fill: none;
+    stroke: #ff8a00;
+    stroke-width: 8;
+    stroke-linecap: round;
+  }
+
+.author-avatar2 {
+    border-radius: 50%; /* گرد کردن کامل گوشه‌ها */
+
+    max-width: 100%; /* حداکثر عرض 100% */
+
+    height: auto; /* حفظ نسبت ابعاد تصویر */
+}
+
+/* دکمه های زیر پروفایل */
+.button-container3 {
+    display: flex;
+    background-color: #271f35;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+    #2e2242 1px 5px 8px;
+  }
+  
+  .button3 {
+    outline: 0 !important;
+    border: 0 !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+  }
+  
+  .button3:hover {
+    transform: translateY(-3px);
+  }
+  
+  .icon3 {
+    font-size: 20px;
+  }
+  

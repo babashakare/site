@@ -21,7 +21,7 @@ function fetchData() {
             // پیام‌های مربوط به هر خط
 
             const messages = [
-                        "Baba Moji",
+                        "Baba Mojiَ",
                         "Pazangaming",
                         "MRmohsenASL",
                         "BIG Mani",
@@ -92,7 +92,6 @@ function fetchData() {
             console.error('خطا در دریافت داده‌ها:', error);
 
         });
-
 }
 
 
@@ -132,13 +131,13 @@ async function loadNumbers() {
 
         // نمایش اعداد در عناصر مربوطه
 
-        document.getElementById('numberDisplay1').innerText = number1 && number1[0] === '700' ? 'دیوار استریمر پلاسما شکست' : (number1 ? number1[0] : 'عدد معتبر پیدا نشد');
+        document.getElementById('numberDisplay1').innerText = number1 && Number(number1[0]) >= 700 ? 'دیوار استریمر پلاسما شکست' : (number1 ? number1[0] : 'عدد معتبر پیدا نشد');
 
-        document.getElementById('numberDisplay2').innerText = number2 && number2[0] === '700' ? 'دیوار استریمر پلاسما شکست' : (number2 ? number2[0] : 'عدد معتبر پیدا نشد');
-
-        document.getElementById('numberDisplay3').innerText = number3 && number3[0] === '700' ? 'دیوار استریمر پلاسما شکست' : (number3 ? number3[0] : 'عدد معتبر پیدا نشد');
-
-        document.getElementById('numberDisplay4').innerText = number4 && number4[0] === '700' ? 'دیوار استریمر پلاسما شکست' : (number4 ? number4[0] : 'عدد معتبر پیدا نشد');
+        document.getElementById('numberDisplay2').innerText = number2 && Number(number2[0]) >= 700 ? 'دیوار استریمر پلاسما شکست' : (number2 ? number2[0] : 'عدد معتبر پیدا نشد');
+        
+        document.getElementById('numberDisplay3').innerText = number3 && Number(number3[0]) >= 700 ? 'دیوار استریمر پلاسما شکست' : (number3 ? number3[0] : 'عدد معتبر پیدا نشد');
+        
+        document.getElementById('numberDisplay4').innerText = number4 && Number(number4[0]) >= 700 ? 'دیوار استریمر پلاسما شکست' : (number4 ? number4[0] : 'عدد معتبر پیدا نشد');
 
 
     } catch (error) {
@@ -153,6 +152,7 @@ async function loadNumbers() {
 
     }
 
+    setInterval(loadNumbers, 10000);
 }
 
 
