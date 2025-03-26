@@ -123,11 +123,11 @@ margin: 15px 15px; /* فاصله 2 پیکسل از بالا و پایین و 0 �
 .card {
     background-color: #1c1c1c;
     border-radius: 10px;
-    margin: 5px;
+    margin: 6px;
     padding: 30px;
     text-align: center;
-    width: 95%;
-    max-width: 150px;
+    width: 88%;
+    max-width: 80%;
 }
 
 .avatar {
@@ -147,6 +147,7 @@ margin: 15px 15px; /* فاصله 2 پیکسل از بالا و پایین و 0 �
     max-width: 300px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    color: #121212;
 }
 
 .count-container {
@@ -236,13 +237,24 @@ background-color: rgba(255, 0, 0, 0.5); /* تغییر رنگ پس‌زمینه �
     bottom: 0;
     left: 0;
     width: 80px;
-    height: 60px;
+    height: 70px;
     fill: none;
     stroke: #ff8a00;
     stroke-width: 8;
     stroke-linecap: round;
   }
 
+  .author-avatar2 {
+
+    display: flex;
+
+    justify-content: center; /* برای وسط چین افقی */
+
+    align-items: center; /* برای وسط چین عمودی */
+
+    height: 100vh; /* ارتفاع 100% از نمای دید */
+
+}
 .author-avatar2 {
     border-radius: 50%; /* گرد کردن کامل گوشه‌ها */
 
@@ -254,14 +266,11 @@ background-color: rgba(255, 0, 0, 0.5); /* تغییر رنگ پس‌زمینه �
 /* دکمه های زیر پروفایل */
 .button-container3 {
     display: flex;
-    background-color: #271f35;
     width: 100%;
     height: 40px;
     align-items: center;
     justify-content: space-around;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
-    #2e2242 1px 5px 8px;
   }
   
   .button3 {
@@ -285,5 +294,24 @@ background-color: rgba(255, 0, 0, 0.5); /* تغییر رنگ پس‌زمینه �
   
   .icon3 {
     font-size: 20px;
+    height: 30px;/*ارتفاع آیکن */
+    width: 30px;/*   عرض آیکن */
+    filter: drop-shadow(1px 1px 10px rgb(255, 153, 0));
   }
   
+  .namess {
+
+    font-size: 34px; /* اندازه متن */
+    font-weight: normal; /* کلفتی متن */
+    color: red; /* رنگ متن */
+    text-shadow: 2px 2px 4px rgb(128, 36, 0); /* سایه متن */
+
+}
+.namess2 {
+
+  font-size: 18px; /* اندازه متن */
+  font-weight: normal; /* کلفتی متن */
+  color: rgb(255, 255, 255); /* رنگ متن */
+  text-shadow: 2px 2px 4px rgb(255, 215, 156); /* سایه متن */
+
+}

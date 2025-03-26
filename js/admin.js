@@ -266,3 +266,4 @@ searchInput.addEventListener('input', function() {
 setInterval(updateH2Count, 10000); // به‌روزرسانی تعداد کاربران هر 10 ثانیه
 
 updateH2Count(); // به‌روزرسانی تعداد کاربران در بارگذاری اولیه
+
