@@ -1,122 +1,76 @@
-<!DOCTYPE html>
-<html lang="fa">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ورود به سیستم</title>
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Profile &mdash; Free Website Template, Free HTML5 Template by freehtml5.co</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="freehtml5.co" />
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
 
-    <link href="css/admin.css" rel="stylesheet" id="style">
-    
-</head>
-<body>
-    <div class="container" id="loginContainer">
-        <div class="heading">سیستم ورود ادمین</div>
-        <form class="form" id="loginForm">
-            <input required class="input" type="text" name="username" id="username" placeholder="نام کاربری">
-            <input required class="input" type="password" name="password" id="password" placeholder="رمز عبور">
-            <input class="login-buttons" type="submit" value="ورود">
-            <p class="error-message" id="errorMessage">یا شما ادمین نیستید یا اطلاعات رو اشتباه وارد کردید!</p>
-        </form>
-    </div>
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+	
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style2.css">
 
-    <div id="mainContent" class="hidden main-content">
-        <div class="image-container">
-            
-            <div class="cardd">
-                <div class="card-authord">
-                    <a class="author-avatard" href="#">
-                        <span>
-                            <img id="userImage" src="" class="author-avatar2" alt="؟" style="max-width: 100%; height: auto;">
-                        </span>
-                    </a>
-                  <svg class="half-circled" viewBox="0 0 106 57">
-                    <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-                  </svg>
-                  <div class="author-named">
-                    <div class="author-name-prefixd"><b>سلام بر ادمین</b></div> <a id="displayName"></a>
-                    <p id="loginTimeDisplay"></p>
-                    </div>
-                  </div>
-                  <!-- From Uiverse.io by akshat-patel28 --> 
-<div class="button-container3">
-    <button class="button3">
-      <svg
-        class="icon3"
-        stroke="currentColor"
-        fill="currentColor"
-        stroke-width="0"
-        viewBox="0 0 1024 1024"
-        height="1em"
-        width="1em"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M946.5 505L560.1 118.8l-25.9-25.9a31.5 31.5 0 0 0-44.4 0L77.5 505a63.9 63.9 0 0 0-18.8 46c.4 35.2 29.7 63.3 64.9 63.3h42.5V940h691.8V614.3h43.4c17.1 0 33.2-6.7 45.3-18.8a63.6 63.6 0 0 0 18.7-45.3c0-17-6.7-33.1-18.8-45.2zM568 868H456V664h112v204zm217.9-325.7V868H632V640c0-22.1-17.9-40-40-40H432c-22.1 0-40 17.9-40 40v228H238.1V542.3h-96l370-369.7 23.1 23.1L882 542.3h-96.1z"
-        ></path>
-      </svg>
-    </button>
-    <button class="button3">
-      <svg
-        class="icon3"
-        stroke="currentColor"
-        fill="none"
-        stroke-width="2"
-        viewBox="0 0 24 24"
-        aria-hidden="true"
-        height="1em"
-        width="1em"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-        ></path>
-      </svg>
-    </button>
-    <button class="button3">
-      <svg
-        class="icon3"
-        stroke="currentColor"
-        fill="currentColor"
-        stroke-width="0"
-        viewBox="0 0 24 24"
-        height="1em"
-        width="1em"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M12 2.5a5.5 5.5 0 0 1 3.096 10.047 9.005 9.005 0 0 1 5.9 8.181.75.75 0 1 1-1.499.044 7.5 7.5 0 0 0-14.993 0 .75.75 0 0 1-1.5-.045 9.005 9.005 0 0 1 5.9-8.18A5.5 5.5 0 0 1 12 2.5ZM8 8a4 4 0 1 0 8 0 4 4 0 0 0-8 0Z"
-        ></path>
-      </svg>
-    </button>
-  
-    <button class="button3">
-      <svg
-        class="icon3"
-        stroke="currentColor"
-        fill="none"
-        stroke-width="2"
-        viewBox="0 0 24 24"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        height="1em"
-        width="1em"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <circle cx="9" cy="21" r="1"></circle>
-        <circle cx="20" cy="21" r="1"></circle>
-        <path
-          d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
-        ></path>
-      </svg>
-    </button>
-  </div>
-  
-                </div>
-                <br>
-                <br>
-        </div>
+	<link href="css/admin.css" rel="stylesheet" id="style">
+
+	</head>
+	<body>
+		<div class="container" id="loginContainer">
+			<div class="heading">سیستم ورود ادمین</div>
+			<form class="form" id="loginForm">
+				<input required class="input" type="text" name="username" id="username" placeholder="نام کاربری">
+				<input required class="input" type="password" name="password" id="password" placeholder="رمز عبور">
+				<input class="login-buttons" type="submit" value="ورود">
+				<p class="error-message" id="errorMessage">یا شما ادمین نیستید یا اطلاعات رو اشتباه وارد کردید!</p>
+			</form>
+		</div>
+	
+		<div id="mainContent" class="hidden main-content">
+	<div id="page">	
+	<header id="fh5co-header" class="fh5co-cover js-fullheight4" role="banner" style="background-image:url(images/cover_bg_3.jpg);" data-stellar-background-ratio="0.5">
+		<div class="overlay4"></div>
+				<div class="col-md-8 col-md-offset-2 text-center4">
+					<div class="display-t js-fullheight4">
+						<div class="display-tc js-fullheight animate-box4" data-animate-effect="fadeIn">
+							<img id="userImage" src="" class="profile-thumb4" alt="؟" style="max-width: 100%; height: auto;">
+							<h1><span>Admin Shakarcity</span></h1>
+							<a class="namess" id="displayName"></a>
+							<p class="namess2" id="loginTimeDisplay"></p>
+							<div class="button-container3">
+								<a href="index.html" class="button3">
+							
+									<img src="img/home.png" alt="خانه" class="icon3" />
+								
+								</a>
+								<a href="https://docs.google.com/document/d/1BrIyOioUUvZ4aM-k0g-I11_nkHcwfejvhOBxWEuMXtY/edit?usp=sharing" class="button3">
+							
+									<img src="img/home2.png" alt="بج نامبر" class="icon3" />
+								
+								</a>
+							  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</header>
+    <br>
         <h1>کاربرانی که درخواست همکاری آنها تایید نمیشود</h1>
         <div class="count-container">
             تعداد کاربران: <span id="h2Count">0</span>
@@ -538,7 +492,17 @@
             </div>
         </div>
     </div>
-    <script src="js/admin.js"></script>
 
-</body>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Main -->
+	<script src="js/main2.js"></script>
+
+	<script src="js/admin.js"></script>
+
+	</body>
 </html>
+
