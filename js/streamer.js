@@ -25,7 +25,7 @@ function fetchData() {
                         "Pazangaming",
                         "MRmohsenASL",
                         "BIG Mani",
-                        "خط 5",
+                        "Miracle-",
                         "خط 6",
                         "خط 7",
                         "خط 8",
@@ -79,7 +79,7 @@ function fetchData() {
 
             } else {
 
-                numberDisplay.innerHTML = "هیچ عدد معتبری پیدا نشد.";
+                numberDisplay.innerHTML = "اطلاعات استریمر پیدا نشد.";
 
                 messageDisplay.innerHTML = "";
 
@@ -127,6 +127,8 @@ async function loadNumbers() {
         const number3 = lines.length > 2 ? lines[2].trim().match(/\d+/) : null; // خط سوم
 
         const number4 = lines.length > 3 ? lines[3].trim().match(/\d+/) : null; // خط چهارم
+		
+		const number5 = lines.length > 4 ? lines[4].trim().match(/\d+/) : null; // خط چهارم
 
 
         // نمایش اعداد در عناصر مربوطه
@@ -139,6 +141,7 @@ async function loadNumbers() {
         
         document.getElementById('numberDisplay4').innerText = number4 && Number(number4[0]) >= 700 ? 'دیوار استریمر پلاسما شکست' : (number4 ? number4[0] : 'عدد معتبر پیدا نشد');
 
+        document.getElementById('numberDisplay5').innerText = number5 && Number(number5[0]) >= 700 ? 'دیوار استریمر پلاسما شکست' : (number5 ? number5[0] : 'عدد معتبر پیدا نشد');
 
     } catch (error) {
 
@@ -149,6 +152,8 @@ async function loadNumbers() {
         document.getElementById('numberDisplay3').innerText = error.message;
 
         document.getElementById('numberDisplay4').innerText = error.message;
+		
+		document.getElementById('numberDisplay5').innerText = error.message;
 
     }
 
