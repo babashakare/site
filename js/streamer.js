@@ -234,6 +234,10 @@ window.onload = function() {
                     } else if (lineNumber === 4) {
 
                         image.src = 'img/SBIGMani.png';
+						
+					} else if (lineNumber === 5) {
+
+                        image.src = 'img/Miracle.png';
 
                     } else {
 
