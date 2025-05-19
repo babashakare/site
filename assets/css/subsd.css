@@ -1,0 +1,86 @@
+
+
+        .containers {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        .items {
+			
+            /* چیدمان با کادر عکس سمت راست و کادر متن سمت چپ */
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+            padding: 20px;
+            width: calc(33.33% - 15px); /* چهار کادر در هر ردیف */
+            box-sizing: border-box;
+            direction: rtl; /* جهت راست به چپ */
+            text-align: right;
+            /* Background image instead of background color */
+            background-image: url('https://s6.uupload.ir/files/breadcrumb_bg01_z7ei.png'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .contents {
+            /* کادر متن سمت چپ با فاصله از کادر عکس */
+            flex: 1;
+            text-align: right;
+            margin-right: 10px; /* فاصله سمت راست برای جدا شدن از کادر عکس */
+        }
+
+        .descriptions {
+			font-family: 'Vazir', Tahoma, Arial, sans-serif;
+			font-weight: bold;
+            font-size: 13px;
+            color: #ccc;
+            margin-top: 5px;
+        }
+
+        .image-container {
+            /* کادر عکس سمت راست */
+            width: 40px;
+            height: 65px; /* کافی برای قرار دادن عناصر عمودی */
+            border-radius: 5px;
+            background-color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            flex-shrink: 0;
+            box-shadow: 0 0 5px rgba(0,0,0,0.5);
+            padding-top: 2px;
+        }
+
+        .starss {
+			text-align: center;
+            font-size: 20px;
+            color: gold; /* رنگ طلایی ستاره ها */
+            margin-bottom: 4px;
+            user-select: none;
+            line-height: 1.1;
+			text-shadow: 0 0 12px #fcd730; /* سایه سبز روشن مئونی */
+        }
+
+        .images {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .captions {
+            font-size: 14px;
+            color: gold;
+            text-align: center;
+            text-shadow: 0 0 10px gold; /* شادو طلایی 10 پیکسل برای ساعت */
+            line-height: 1;
+            user-select: none;
+        }

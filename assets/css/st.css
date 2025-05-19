@@ -101,6 +101,22 @@
   width: max-content;
   margin: 0 auto;
 }
+.title15 {
+  font-family: 'Vazir', Tahoma, Arial, sans-serif;
+  color: #fcd730;
+  font-weight: bold;
+  font-size: 15px;
+  text-shadow: 0 0 12px #fcd730; /* سایه سبز روشن مئونی */
+  text-align: center;
+}
+.title16 {
+  color: var(--tg-theme-primary);
+  direction: rtl;
+  text-align: right;
+  font-weight: bold;
+  font-size: 30px;
+  text-shadow: 0 0 4px var(--tg-theme-primary); /* سایه سبز روشن مئونی */
+}
 .num1 {
   color: #fcd730;
   font-weight: bold;
@@ -121,6 +137,22 @@
   color: #fcd730;
   font-weight: bold;
   font-size: 20px;
+}
+.text4 {
+    direction: rtl;
+	color: with;
+    text-align: right;
+    line-height: 1.8;
+	font-weight: bold;
+    font-size: 20px;
+}
+.text5 {
+  direction: rtl;
+  text-align: right;
+  color: #fcd730;
+  font-weight: bold;
+  font-size: 20px;
+  text-shadow: 0 0 2px #fc8f30; /* سایه سبز روشن مئونی */
 }
 .off2 {
   font-family: 'Vazir', Tahoma, Arial, sans-serif;
