@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="shortcut icon" type="image/x-icon" href="https://shekarcity.ir/assets/img/favicon.png">
+  <title>درخواست استریمری</title>
+  <link rel="stylesheet" href="../assets/css/style-form.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="login-card" id="loginCard">
+    <img src="../assets/logos.png" alt="Logo" class="logo">
+    <h1 class="wave">ثبت درخواست استریمری</h1>
+    <h2>یک درخواست ساده 2 دقیقه ای</h2>
+
+    <form id="loginForm" action="https://docs.google.com/forms/d/e/1FAIpQLSe7Z-XJbPjgXGPmLl1Co3nf_qKsyytvQ_96SxEN_marmpKY7A/formResponse" method="POST" target="_self">
+      <label><b>نام و نام خانوادگی (حقیقی)</b></label>
+      <div class="input-icon">
+        <span>🎎</span>
+        <input type="text" id="name" name="entry.1318630902" placeholder="مثال: محمد محمدی" required>
+      </div>
+      <label><b>سن شما (حقیقی)</b></label>
+      <div class="input-icon">
+        <span>🎂</span>
+        <input type="number" id="age" name="entry.916167549" placeholder="مثال: 20" min="15" required>
+      </div>
+      <label><b>شماره تماس (فعال)</b></label>
+      <div class="input-icon">
+        <span>📱</span>
+        <input type="tel" id="phone" name="entry.1958431297" placeholder="09*********" required>
+      </div>
+      <label><b>ایمیل (فعال)</b></label>
+      <div class="input-icon">
+        <span>📧</span>
+        <input type="email" id="email" name="entry.138287234" placeholder="example@example.com" required>
+      </div>
+      <label for="streamType"><b>نوع استریم</b></label>
+      <div class="input-icon">
+        <span>🎮</span>
+        <select id="streamType" name="entry.917588027" required>
+          <option value="" disabled selected>انتخاب کنید</option>
+          <option value="شوتر">شوتر</option>
+          <option value="رندوم">رندوم</option>
+          <option value="ماینکرافت و بقا">ماینکرافت و بقا</option>
+          <option value="اسنایپ">اسنایپ</option>
+          <option value="سولو">سولو</option>
+          <option value="بتل">بتل</option>
+          <option value="موارد دیگه">موارد دیگه</option>
+        </select>
+      </div>
+      <label><b>آدرس استریم (لینک صفحه لایو)</b></label>
+      <div class="input-icon">
+        <span>📺</span>
+        <input type="url" id="streamLink" name="entry.1873128058" placeholder="https://www.aparat.com/yourname" required>
+      </div>
+      <label><b>تعداد فالوور چنل (حداقل 600 نفر)</b></label>
+      <div class="input-icon">
+        <span>⚔️</span>
+        <input type="number" id="followers" name="entry.205629643" placeholder="حداقل 600 نفر" min="600" required>
+      </div>
+      <label><b>تعداد بازدید کل استریم (حداقل 800 نفر)</b></label>
+      <div class="input-icon">
+        <span>👥</span>
+        <input type="number" id="totalViews" name="entry.872979833" placeholder="حداقل 800 نفر" min="800" required>
+      </div>
+      <div class="remember">
+        <input type="checkbox" id="remember" />
+        <label for="remember"><b>استریمر برگزیده هستید؟</b></label>
+      </div>
+      <div class="invite-code" id="inviteCodeSection">
+        <label><b>کد استریمر منتخب را وارد کنید</b></label>
+        <div class="input-icon">
+          <span>🔒</span>
+          <input type="text" id="inviteCode" name="entry.624720832" placeholder="در صورت وجود">
+        </div>
+      </div>
+      <button type="submit">ثبت درخواست</button>
+    </form>
+  </div>
+
+  <div class="notification" id="notification">
+    <div class="notification-content">
+      <div class="notification-icon">
+        <i class="fas fa-check"></i>
+      </div>
+      <div class="notification-message"></div>
+    </div>
+    <div class="notification-progress">
+      <div class="notification-progress-bar"></div>
+    </div>
+  </div>
+
+<script src="../assets/js/code-form.js"></script>
+</body>
+</html>
+

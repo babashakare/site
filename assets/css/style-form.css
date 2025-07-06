@@ -1,0 +1,282 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100dvh;
+      font-family: 'Inter', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url('https://s6.uupload.ir/files/bg3_hcvp.jpg') no-repeat center center/cover;
+      overflow: auto;
+    }
+
+    .login-card {
+      margin: 50px 0;
+      width: 430px;
+      padding: 40px 30px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37), 
+                  0 0 20px rgba(143, 47, 255, 0.5);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.3s ease;
+    }
+	.logo {
+      display: block;
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid rgba(8, 204, 34, 0.2);
+      box-shadow: 0 0 20px rgba(8, 204, 34, 0.9);
+    }
+
+    .login-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(31, 38, 135, 0.37), 
+                  0 5px 25px rgba(143, 47, 255, 0.6);
+    }
+
+    .login-card.animate {
+      animation: fadeSlideIn 1s ease forwards;
+    }
+
+    @keyframes fadeSlideIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .wave {
+      font-size: 30px;
+      text-align: center;
+      color: white;
+      margin-bottom: 5px;
+      text-shadow: 0 0 10px rgba(143, 47, 255, 0.7);
+    }
+
+    .login-card h2 {
+      text-align: center;
+      color: rgba(221, 221, 221, 0.8);
+      font-weight: 100;
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+
+    form label {
+      font-family: 'Vazir', sans-serif;
+      text-align: right;
+      font-size: 14px;
+      color: white;
+      line-height: 1.6;
+      border-radius: 5px;
+      display: block;
+      margin: 15px 0 5px;
+      text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .input-icon {
+      display: flex;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 10px;
+      padding: 10px;
+      color: #ccc;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .input-icon:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .input-icon input,
+    .input-icon select {
+      border: none;
+      outline: none;
+      background: transparent;
+      color: #fff;
+      margin-left: 10px;
+      flex: 1;
+      font-size: 14px;
+    }
+
+    .input-icon:focus-within {
+      border: 1px solid #a669ff;
+      box-shadow: 0 0 15px rgba(166, 105, 255, 0.6);
+    }
+
+    .remember {
+      display: flex;
+      align-items: center;
+      margin: 15px 0;
+      font-size: 13px;
+      color: #ddd;
+      gap: 0.4rem;
+    }
+
+    .remember input[type="checkbox"] {
+      appearance: none;
+      width: 18px;
+      height: 18px;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.1);
+      cursor: pointer;
+      position: relative;
+    }
+
+    .remember input[type="checkbox"]:checked {
+      background: #8f2fff;
+      border-color: #8f2fff;
+    }
+
+    .remember input[type="checkbox"]:checked:after {
+      content: "✓";
+      position: absolute;
+      color: white;
+      font-size: 12px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .invite-code {
+      display: none;
+      margin-top: 10px;
+      animation: fadeIn 0.5s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #8f2fff, #6a19d1);
+      color: white;
+      font-weight: bold;
+      margin-top: 10px;
+      cursor: pointer;
+      transition: all 0.3s;
+      box-shadow: 0 4px 15px rgba(143, 47, 255, 0.4);
+      position: relative;
+      overflow: hidden;
+      font-size: 15px;
+    }
+
+    button:hover {
+      background: linear-gradient(135deg, #7a25e0, #5a15b9);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(143, 47, 255, 0.6);
+    }
+
+    button:active {
+      transform: translateY(1px);
+    }
+
+    button:after {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -60%;
+      width: 200%;
+      height: 200%;
+      background: rgba(255, 255, 255, 0.1);
+      transform: rotate(30deg);
+      transition: all 0.5s;
+    }
+
+    button:hover:after {
+      left: 100%;
+    }
+
+    /* Gaming Notification Style */
+    .notification {
+      position: fixed;
+      bottom: -100px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+      max-width: 400px;
+      background: rgba(20, 20, 40, 0.9);
+      color: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5),
+                  0 0 0 2px #8f2fff,
+                  0 0 15px rgba(143, 47, 255, 0.5);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      opacity: 0;
+      transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .notification.show {
+      bottom: 20px;
+      opacity: 1;
+    }
+
+    .notification-content {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex: 1;
+    }
+
+    .notification-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(143, 47, 255, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      border: 2px solid #8f2fff;
+    }
+
+    .notification-progress {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 0 0 15px 15px;
+      overflow: hidden;
+    }
+
+    .notification-progress-bar {
+      height: 100%;
+      background: linear-gradient(90deg, #8f2fff, #d96aff);
+      width: 100%;
+      animation: progress 5s linear forwards;
+    }
+
+    @keyframes progress {
+      from { width: 100%; }
+      to { width: 0; }
+    }
